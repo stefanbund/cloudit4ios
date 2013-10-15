@@ -13,7 +13,6 @@
 		758817DD180DFFE0000D28B6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 758817DC180DFFE0000D28B6 /* CoreData.framework */; };
 		758817E3180DFFE0000D28B6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 758817E1180DFFE0000D28B6 /* InfoPlist.strings */; };
 		758817E5180DFFE0000D28B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 758817E4180DFFE0000D28B6 /* main.m */; };
-		758817E9180DFFE0000D28B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 758817E8180DFFE0000D28B6 /* AppDelegate.m */; };
 		758817EC180DFFE0000D28B6 /* cloudit4ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 758817EA180DFFE0000D28B6 /* cloudit4ios.xcdatamodeld */; };
 		758817EE180DFFE0000D28B6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 758817ED180DFFE0000D28B6 /* Images.xcassets */; };
 		758817F5180DFFE1000D28B6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 758817F4180DFFE1000D28B6 /* XCTest.framework */; };
@@ -22,6 +21,63 @@
 		758817F8180DFFE1000D28B6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 758817DC180DFFE0000D28B6 /* CoreData.framework */; };
 		75881800180DFFE1000D28B6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 758817FE180DFFE1000D28B6 /* InfoPlist.strings */; };
 		75881802180DFFE1000D28B6 /* cloudit4iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75881801180DFFE1000D28B6 /* cloudit4iosTests.m */; };
+		75881814180E030F000D28B6 /* DynamoDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7588180C180E030F000D28B6 /* DynamoDBManager.m */; };
+		75881815180E030F000D28B6 /* project_log in Resources */ = {isa = PBXBuildFile; fileRef = 7588180E180E030F000D28B6 /* project_log */; };
+		75881816180E030F000D28B6 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 75881810180E030F000D28B6 /* Constants.m */; };
+		75881817180E030F000D28B6 /* data.m in Sources */ = {isa = PBXBuildFile; fileRef = 75881811180E030F000D28B6 /* data.m */; };
+		75881818180E030F000D28B6 /* AmazonClientManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 75881812180E030F000D28B6 /* AmazonClientManager.m */; };
+		7588181B180E0333000D28B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75881819180E0333000D28B6 /* AppDelegate.m */; };
+		75881823180E03EF000D28B6 /* AWSRuntime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7588181C180E03EF000D28B6 /* AWSRuntime.framework */; };
+		75881824180E03EF000D28B6 /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7588181D180E03EF000D28B6 /* AWSS3.framework */; };
+		75881825180E03EF000D28B6 /* AWSSES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7588181E180E03EF000D28B6 /* AWSSES.framework */; };
+		75881826180E03EF000D28B6 /* AWSSimpleDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7588181F180E03EF000D28B6 /* AWSSimpleDB.framework */; };
+		75881827180E03EF000D28B6 /* AWSSNS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75881820180E03EF000D28B6 /* AWSSNS.framework */; };
+		75881828180E03EF000D28B6 /* AWSSQS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75881821180E03EF000D28B6 /* AWSSQS.framework */; };
+		75881829180E03EF000D28B6 /* AWSDynamoDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75881822180E03EF000D28B6 /* AWSDynamoDB.framework */; };
+		7588187E180E0409000D28B6 /* AddBucketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7588182C180E0409000D28B6 /* AddBucketViewController.m */; };
+		7588187F180E0409000D28B6 /* AddBucketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7588182D180E0409000D28B6 /* AddBucketViewController.xib */; };
+		75881880180E0409000D28B6 /* AddObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7588182F180E0409000D28B6 /* AddObjectViewController.m */; };
+		75881881180E0409000D28B6 /* AddObjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75881830180E0409000D28B6 /* AddObjectViewController.xib */; };
+		75881882180E0409000D28B6 /* AsyncImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 75881832180E0409000D28B6 /* AsyncImageDownloader.m */; };
+		75881883180E0409000D28B6 /* AsyncImageUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 75881834180E0409000D28B6 /* AsyncImageUploader.m */; };
+		75881884180E0409000D28B6 /* BucketList.m in Sources */ = {isa = PBXBuildFile; fileRef = 75881836180E0409000D28B6 /* BucketList.m */; };
+		75881885180E0409000D28B6 /* ObjectListing.m in Sources */ = {isa = PBXBuildFile; fileRef = 75881838180E0409000D28B6 /* ObjectListing.m */; };
+		75881886180E0409000D28B6 /* ObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7588183A180E0409000D28B6 /* ObjectViewController.m */; };
+		75881887180E0409000D28B6 /* ObjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7588183B180E0409000D28B6 /* ObjectViewController.xib */; };
+		75881888180E0409000D28B6 /* S3AsyncViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7588183D180E0409000D28B6 /* S3AsyncViewController.m */; };
+		75881889180E0409000D28B6 /* S3AsyncViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7588183E180E0409000D28B6 /* S3AsyncViewController.xib */; };
+		7588188A180E0409000D28B6 /* S3NSOperationDemoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7588183F180E0409000D28B6 /* S3NSOperationDemoView.xib */; };
+		7588188B180E0409000D28B6 /* S3NSOperationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75881841180E0409000D28B6 /* S3NSOperationDemoViewController.m */; };
+		7588188C180E0409000D28B6 /* S3ResponseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 75881843180E0409000D28B6 /* S3ResponseHandler.m */; };
+		7588188D180E0409000D28B6 /* DomainList.m in Sources */ = {isa = PBXBuildFile; fileRef = 75881846180E0409000D28B6 /* DomainList.m */; };
+		7588188E180E0409000D28B6 /* ItemListing.m in Sources */ = {isa = PBXBuildFile; fileRef = 75881848180E0409000D28B6 /* ItemListing.m */; };
+		7588188F180E0409000D28B6 /* ItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7588184A180E0409000D28B6 /* ItemViewController.m */; };
+		75881890180E0409000D28B6 /* SdbAsyncViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7588184C180E0409000D28B6 /* SdbAsyncViewController.m */; };
+		75881891180E0409000D28B6 /* SdbAsyncViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7588184D180E0409000D28B6 /* SdbAsyncViewController.xib */; };
+		75881892180E0409000D28B6 /* SdbRequestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7588184F180E0409000D28B6 /* SdbRequestDelegate.m */; };
+		75881893180E0409000D28B6 /* TopicList.m in Sources */ = {isa = PBXBuildFile; fileRef = 75881852180E0409000D28B6 /* TopicList.m */; };
+		75881894180E0409000D28B6 /* AddQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 75881855180E0409000D28B6 /* AddQueue.m */; };
+		75881895180E0409000D28B6 /* AddQueue.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75881856180E0409000D28B6 /* AddQueue.xib */; };
+		75881896180E0409000D28B6 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 75881858180E0409000D28B6 /* Message.m */; };
+		75881897180E0409000D28B6 /* Message.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75881859180E0409000D28B6 /* Message.xib */; };
+		75881898180E0409000D28B6 /* MessageList.m in Sources */ = {isa = PBXBuildFile; fileRef = 7588185B180E0409000D28B6 /* MessageList.m */; };
+		75881899180E0409000D28B6 /* QueueList.m in Sources */ = {isa = PBXBuildFile; fileRef = 7588185D180E0409000D28B6 /* QueueList.m */; };
+		7588189A180E0409000D28B6 /* SendMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7588185F180E0409000D28B6 /* SendMessage.m */; };
+		7588189B180E0409000D28B6 /* SendMessage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75881860180E0409000D28B6 /* SendMessage.xib */; };
+		7588189C180E0409000D28B6 /* AmazonKeyChainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 75881863180E0409000D28B6 /* AmazonKeyChainWrapper.m */; };
+		7588189D180E0409000D28B6 /* AmazonTVMClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 75881865180E0409000D28B6 /* AmazonTVMClient.m */; };
+		7588189E180E0409000D28B6 /* Crypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 75881867180E0409000D28B6 /* Crypto.m */; };
+		7588189F180E0409000D28B6 /* GetTokenRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 75881869180E0409000D28B6 /* GetTokenRequest.m */; };
+		758818A0180E0409000D28B6 /* GetTokenResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7588186B180E0409000D28B6 /* GetTokenResponse.m */; };
+		758818A1180E0409000D28B6 /* GetTokenResponseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 7588186D180E0409000D28B6 /* GetTokenResponseHandler.m */; };
+		758818A2180E0409000D28B6 /* JSONUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 7588186F180E0409000D28B6 /* JSONUtilities.m */; };
+		758818A3180E0409000D28B6 /* LoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 75881871180E0409000D28B6 /* LoginRequest.m */; };
+		758818A4180E0409000D28B6 /* LoginResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 75881873180E0409000D28B6 /* LoginResponse.m */; };
+		758818A5180E0409000D28B6 /* LoginResponseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 75881875180E0409000D28B6 /* LoginResponseHandler.m */; };
+		758818A6180E0409000D28B6 /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 75881877180E0409000D28B6 /* Request.m */; };
+		758818A7180E0409000D28B6 /* RequestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75881879180E0409000D28B6 /* RequestDelegate.m */; };
+		758818A8180E0409000D28B6 /* Response.m in Sources */ = {isa = PBXBuildFile; fileRef = 7588187B180E0409000D28B6 /* Response.m */; };
+		758818A9180E0409000D28B6 /* ResponseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 7588187D180E0409000D28B6 /* ResponseHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +100,6 @@
 		758817E2180DFFE0000D28B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		758817E4180DFFE0000D28B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		758817E6180DFFE0000D28B6 /* cloudit4ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cloudit4ios-Prefix.pch"; sourceTree = "<group>"; };
-		758817E7180DFFE0000D28B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		758817E8180DFFE0000D28B6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		758817EB180DFFE0000D28B6 /* cloudit4ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = cloudit4ios.xcdatamodel; sourceTree = "<group>"; };
 		758817ED180DFFE0000D28B6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		758817F3180DFFE1000D28B6 /* cloudit4iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cloudit4iosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +107,103 @@
 		758817FD180DFFE1000D28B6 /* cloudit4iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cloudit4iosTests-Info.plist"; sourceTree = "<group>"; };
 		758817FF180DFFE1000D28B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		75881801180DFFE1000D28B6 /* cloudit4iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cloudit4iosTests.m; sourceTree = "<group>"; };
+		7588180B180E030F000D28B6 /* DynamoDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DynamoDBManager.h; path = ../HOOKITUP/HOOKITUP/HOOKITUP/DynamoDBManager.h; sourceTree = "<group>"; };
+		7588180C180E030F000D28B6 /* DynamoDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DynamoDBManager.m; path = ../HOOKITUP/HOOKITUP/HOOKITUP/DynamoDBManager.m; sourceTree = "<group>"; };
+		7588180D180E030F000D28B6 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = ../HOOKITUP/HOOKITUP/HOOKITUP/Constants.h; sourceTree = "<group>"; };
+		7588180E180E030F000D28B6 /* project_log */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = project_log; path = ../HOOKITUP/HOOKITUP/HOOKITUP/project_log; sourceTree = "<group>"; };
+		7588180F180E030F000D28B6 /* AmazonClientManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AmazonClientManager.h; path = ../HOOKITUP/HOOKITUP/HOOKITUP/AmazonClientManager.h; sourceTree = "<group>"; };
+		75881810180E030F000D28B6 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constants.m; path = ../HOOKITUP/HOOKITUP/HOOKITUP/Constants.m; sourceTree = "<group>"; };
+		75881811180E030F000D28B6 /* data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = data.m; path = ../HOOKITUP/HOOKITUP/HOOKITUP/data.m; sourceTree = "<group>"; };
+		75881812180E030F000D28B6 /* AmazonClientManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AmazonClientManager.m; path = ../HOOKITUP/HOOKITUP/HOOKITUP/AmazonClientManager.m; sourceTree = "<group>"; };
+		75881813180E030F000D28B6 /* data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = data.h; path = ../HOOKITUP/HOOKITUP/HOOKITUP/data.h; sourceTree = "<group>"; };
+		75881819180E0333000D28B6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../HOOKITUP/HOOKITUP/HOOKITUP/AppDelegate.m; sourceTree = "<group>"; };
+		7588181A180E0333000D28B6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../HOOKITUP/HOOKITUP/HOOKITUP/AppDelegate.h; sourceTree = "<group>"; };
+		7588181C180E03EF000D28B6 /* AWSRuntime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSRuntime.framework; sourceTree = "<group>"; };
+		7588181D180E03EF000D28B6 /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSS3.framework; sourceTree = "<group>"; };
+		7588181E180E03EF000D28B6 /* AWSSES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSSES.framework; sourceTree = "<group>"; };
+		7588181F180E03EF000D28B6 /* AWSSimpleDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSSimpleDB.framework; sourceTree = "<group>"; };
+		75881820180E03EF000D28B6 /* AWSSNS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSSNS.framework; sourceTree = "<group>"; };
+		75881821180E03EF000D28B6 /* AWSSQS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSSQS.framework; sourceTree = "<group>"; };
+		75881822180E03EF000D28B6 /* AWSDynamoDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSDynamoDB.framework; sourceTree = "<group>"; };
+		7588182B180E0409000D28B6 /* AddBucketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddBucketViewController.h; sourceTree = "<group>"; };
+		7588182C180E0409000D28B6 /* AddBucketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddBucketViewController.m; sourceTree = "<group>"; };
+		7588182D180E0409000D28B6 /* AddBucketViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddBucketViewController.xib; sourceTree = "<group>"; };
+		7588182E180E0409000D28B6 /* AddObjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddObjectViewController.h; sourceTree = "<group>"; };
+		7588182F180E0409000D28B6 /* AddObjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddObjectViewController.m; sourceTree = "<group>"; };
+		75881830180E0409000D28B6 /* AddObjectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddObjectViewController.xib; sourceTree = "<group>"; };
+		75881831180E0409000D28B6 /* AsyncImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageDownloader.h; sourceTree = "<group>"; };
+		75881832180E0409000D28B6 /* AsyncImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageDownloader.m; sourceTree = "<group>"; };
+		75881833180E0409000D28B6 /* AsyncImageUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageUploader.h; sourceTree = "<group>"; };
+		75881834180E0409000D28B6 /* AsyncImageUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageUploader.m; sourceTree = "<group>"; };
+		75881835180E0409000D28B6 /* BucketList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BucketList.h; sourceTree = "<group>"; };
+		75881836180E0409000D28B6 /* BucketList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BucketList.m; sourceTree = "<group>"; };
+		75881837180E0409000D28B6 /* ObjectListing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectListing.h; sourceTree = "<group>"; };
+		75881838180E0409000D28B6 /* ObjectListing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectListing.m; sourceTree = "<group>"; };
+		75881839180E0409000D28B6 /* ObjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectViewController.h; sourceTree = "<group>"; };
+		7588183A180E0409000D28B6 /* ObjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectViewController.m; sourceTree = "<group>"; };
+		7588183B180E0409000D28B6 /* ObjectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ObjectViewController.xib; sourceTree = "<group>"; };
+		7588183C180E0409000D28B6 /* S3AsyncViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = S3AsyncViewController.h; sourceTree = "<group>"; };
+		7588183D180E0409000D28B6 /* S3AsyncViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = S3AsyncViewController.m; sourceTree = "<group>"; };
+		7588183E180E0409000D28B6 /* S3AsyncViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = S3AsyncViewController.xib; sourceTree = "<group>"; };
+		7588183F180E0409000D28B6 /* S3NSOperationDemoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = S3NSOperationDemoView.xib; sourceTree = "<group>"; };
+		75881840180E0409000D28B6 /* S3NSOperationDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = S3NSOperationDemoViewController.h; sourceTree = "<group>"; };
+		75881841180E0409000D28B6 /* S3NSOperationDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = S3NSOperationDemoViewController.m; sourceTree = "<group>"; };
+		75881842180E0409000D28B6 /* S3ResponseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = S3ResponseHandler.h; sourceTree = "<group>"; };
+		75881843180E0409000D28B6 /* S3ResponseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = S3ResponseHandler.m; sourceTree = "<group>"; };
+		75881845180E0409000D28B6 /* DomainList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DomainList.h; sourceTree = "<group>"; };
+		75881846180E0409000D28B6 /* DomainList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DomainList.m; sourceTree = "<group>"; };
+		75881847180E0409000D28B6 /* ItemListing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemListing.h; sourceTree = "<group>"; };
+		75881848180E0409000D28B6 /* ItemListing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemListing.m; sourceTree = "<group>"; };
+		75881849180E0409000D28B6 /* ItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemViewController.h; sourceTree = "<group>"; };
+		7588184A180E0409000D28B6 /* ItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemViewController.m; sourceTree = "<group>"; };
+		7588184B180E0409000D28B6 /* SdbAsyncViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SdbAsyncViewController.h; sourceTree = "<group>"; };
+		7588184C180E0409000D28B6 /* SdbAsyncViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SdbAsyncViewController.m; sourceTree = "<group>"; };
+		7588184D180E0409000D28B6 /* SdbAsyncViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SdbAsyncViewController.xib; sourceTree = "<group>"; };
+		7588184E180E0409000D28B6 /* SdbRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SdbRequestDelegate.h; sourceTree = "<group>"; };
+		7588184F180E0409000D28B6 /* SdbRequestDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SdbRequestDelegate.m; sourceTree = "<group>"; };
+		75881851180E0409000D28B6 /* TopicList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicList.h; sourceTree = "<group>"; };
+		75881852180E0409000D28B6 /* TopicList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicList.m; sourceTree = "<group>"; };
+		75881854180E0409000D28B6 /* AddQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddQueue.h; sourceTree = "<group>"; };
+		75881855180E0409000D28B6 /* AddQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddQueue.m; sourceTree = "<group>"; };
+		75881856180E0409000D28B6 /* AddQueue.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddQueue.xib; sourceTree = "<group>"; };
+		75881857180E0409000D28B6 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		75881858180E0409000D28B6 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		75881859180E0409000D28B6 /* Message.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Message.xib; sourceTree = "<group>"; };
+		7588185A180E0409000D28B6 /* MessageList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageList.h; sourceTree = "<group>"; };
+		7588185B180E0409000D28B6 /* MessageList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageList.m; sourceTree = "<group>"; };
+		7588185C180E0409000D28B6 /* QueueList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueList.h; sourceTree = "<group>"; };
+		7588185D180E0409000D28B6 /* QueueList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueList.m; sourceTree = "<group>"; };
+		7588185E180E0409000D28B6 /* SendMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendMessage.h; sourceTree = "<group>"; };
+		7588185F180E0409000D28B6 /* SendMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendMessage.m; sourceTree = "<group>"; };
+		75881860180E0409000D28B6 /* SendMessage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SendMessage.xib; sourceTree = "<group>"; };
+		75881862180E0409000D28B6 /* AmazonKeyChainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmazonKeyChainWrapper.h; sourceTree = "<group>"; };
+		75881863180E0409000D28B6 /* AmazonKeyChainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmazonKeyChainWrapper.m; sourceTree = "<group>"; };
+		75881864180E0409000D28B6 /* AmazonTVMClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmazonTVMClient.h; sourceTree = "<group>"; };
+		75881865180E0409000D28B6 /* AmazonTVMClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmazonTVMClient.m; sourceTree = "<group>"; };
+		75881866180E0409000D28B6 /* Crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crypto.h; sourceTree = "<group>"; };
+		75881867180E0409000D28B6 /* Crypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Crypto.m; sourceTree = "<group>"; };
+		75881868180E0409000D28B6 /* GetTokenRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetTokenRequest.h; sourceTree = "<group>"; };
+		75881869180E0409000D28B6 /* GetTokenRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetTokenRequest.m; sourceTree = "<group>"; };
+		7588186A180E0409000D28B6 /* GetTokenResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetTokenResponse.h; sourceTree = "<group>"; };
+		7588186B180E0409000D28B6 /* GetTokenResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetTokenResponse.m; sourceTree = "<group>"; };
+		7588186C180E0409000D28B6 /* GetTokenResponseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetTokenResponseHandler.h; sourceTree = "<group>"; };
+		7588186D180E0409000D28B6 /* GetTokenResponseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetTokenResponseHandler.m; sourceTree = "<group>"; };
+		7588186E180E0409000D28B6 /* JSONUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONUtilities.h; sourceTree = "<group>"; };
+		7588186F180E0409000D28B6 /* JSONUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONUtilities.m; sourceTree = "<group>"; };
+		75881870180E0409000D28B6 /* LoginRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginRequest.h; sourceTree = "<group>"; };
+		75881871180E0409000D28B6 /* LoginRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginRequest.m; sourceTree = "<group>"; };
+		75881872180E0409000D28B6 /* LoginResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginResponse.h; sourceTree = "<group>"; };
+		75881873180E0409000D28B6 /* LoginResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginResponse.m; sourceTree = "<group>"; };
+		75881874180E0409000D28B6 /* LoginResponseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginResponseHandler.h; sourceTree = "<group>"; };
+		75881875180E0409000D28B6 /* LoginResponseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginResponseHandler.m; sourceTree = "<group>"; };
+		75881876180E0409000D28B6 /* Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
+		75881877180E0409000D28B6 /* Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Request.m; sourceTree = "<group>"; };
+		75881878180E0409000D28B6 /* RequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestDelegate.h; sourceTree = "<group>"; };
+		75881879180E0409000D28B6 /* RequestDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestDelegate.m; sourceTree = "<group>"; };
+		7588187A180E0409000D28B6 /* Response.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Response.h; sourceTree = "<group>"; };
+		7588187B180E0409000D28B6 /* Response.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Response.m; sourceTree = "<group>"; };
+		7588187C180E0409000D28B6 /* ResponseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseHandler.h; sourceTree = "<group>"; };
+		7588187D180E0409000D28B6 /* ResponseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +211,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75881828180E03EF000D28B6 /* AWSSQS.framework in Frameworks */,
 				758817D9180DFFE0000D28B6 /* CoreGraphics.framework in Frameworks */,
+				75881827180E03EF000D28B6 /* AWSSNS.framework in Frameworks */,
 				758817DD180DFFE0000D28B6 /* CoreData.framework in Frameworks */,
+				75881829180E03EF000D28B6 /* AWSDynamoDB.framework in Frameworks */,
+				75881824180E03EF000D28B6 /* AWSS3.framework in Frameworks */,
 				758817DB180DFFE0000D28B6 /* UIKit.framework in Frameworks */,
+				75881826180E03EF000D28B6 /* AWSSimpleDB.framework in Frameworks */,
+				75881825180E03EF000D28B6 /* AWSSES.framework in Frameworks */,
+				75881823180E03EF000D28B6 /* AWSRuntime.framework in Frameworks */,
 				758817D7180DFFE0000D28B6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,6 +242,22 @@
 		758817CA180DFFE0000D28B6 = {
 			isa = PBXGroup;
 			children = (
+				75881819180E0333000D28B6 /* AppDelegate.m */,
+				7588181A180E0333000D28B6 /* AppDelegate.h */,
+				7588180B180E030F000D28B6 /* DynamoDBManager.h */,
+				7588180C180E030F000D28B6 /* DynamoDBManager.m */,
+				7588180D180E030F000D28B6 /* Constants.h */,
+				7588180E180E030F000D28B6 /* project_log */,
+				7588180F180E030F000D28B6 /* AmazonClientManager.h */,
+				75881810180E030F000D28B6 /* Constants.m */,
+				75881811180E030F000D28B6 /* data.m */,
+				7588182A180E0409000D28B6 /* S3 */,
+				75881844180E0409000D28B6 /* SDB */,
+				75881850180E0409000D28B6 /* SNS */,
+				75881853180E0409000D28B6 /* SQS */,
+				75881861180E0409000D28B6 /* TVMClient */,
+				75881812180E030F000D28B6 /* AmazonClientManager.m */,
+				75881813180E030F000D28B6 /* data.h */,
 				758817DE180DFFE0000D28B6 /* cloudit4ios */,
 				758817FB180DFFE1000D28B6 /* cloudit4iosTests */,
 				758817D5180DFFE0000D28B6 /* Frameworks */,
@@ -103,6 +277,13 @@
 		758817D5180DFFE0000D28B6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7588181C180E03EF000D28B6 /* AWSRuntime.framework */,
+				7588181D180E03EF000D28B6 /* AWSS3.framework */,
+				7588181E180E03EF000D28B6 /* AWSSES.framework */,
+				7588181F180E03EF000D28B6 /* AWSSimpleDB.framework */,
+				75881820180E03EF000D28B6 /* AWSSNS.framework */,
+				75881821180E03EF000D28B6 /* AWSSQS.framework */,
+				75881822180E03EF000D28B6 /* AWSDynamoDB.framework */,
 				758817D6180DFFE0000D28B6 /* Foundation.framework */,
 				758817D8180DFFE0000D28B6 /* CoreGraphics.framework */,
 				758817DA180DFFE0000D28B6 /* UIKit.framework */,
@@ -115,8 +296,6 @@
 		758817DE180DFFE0000D28B6 /* cloudit4ios */ = {
 			isa = PBXGroup;
 			children = (
-				758817E7180DFFE0000D28B6 /* AppDelegate.h */,
-				758817E8180DFFE0000D28B6 /* AppDelegate.m */,
 				758817ED180DFFE0000D28B6 /* Images.xcassets */,
 				758817EA180DFFE0000D28B6 /* cloudit4ios.xcdatamodeld */,
 				758817DF180DFFE0000D28B6 /* Supporting Files */,
@@ -151,6 +330,120 @@
 				758817FE180DFFE1000D28B6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7588182A180E0409000D28B6 /* S3 */ = {
+			isa = PBXGroup;
+			children = (
+				7588182B180E0409000D28B6 /* AddBucketViewController.h */,
+				7588182C180E0409000D28B6 /* AddBucketViewController.m */,
+				7588182D180E0409000D28B6 /* AddBucketViewController.xib */,
+				7588182E180E0409000D28B6 /* AddObjectViewController.h */,
+				7588182F180E0409000D28B6 /* AddObjectViewController.m */,
+				75881830180E0409000D28B6 /* AddObjectViewController.xib */,
+				75881831180E0409000D28B6 /* AsyncImageDownloader.h */,
+				75881832180E0409000D28B6 /* AsyncImageDownloader.m */,
+				75881833180E0409000D28B6 /* AsyncImageUploader.h */,
+				75881834180E0409000D28B6 /* AsyncImageUploader.m */,
+				75881835180E0409000D28B6 /* BucketList.h */,
+				75881836180E0409000D28B6 /* BucketList.m */,
+				75881837180E0409000D28B6 /* ObjectListing.h */,
+				75881838180E0409000D28B6 /* ObjectListing.m */,
+				75881839180E0409000D28B6 /* ObjectViewController.h */,
+				7588183A180E0409000D28B6 /* ObjectViewController.m */,
+				7588183B180E0409000D28B6 /* ObjectViewController.xib */,
+				7588183C180E0409000D28B6 /* S3AsyncViewController.h */,
+				7588183D180E0409000D28B6 /* S3AsyncViewController.m */,
+				7588183E180E0409000D28B6 /* S3AsyncViewController.xib */,
+				7588183F180E0409000D28B6 /* S3NSOperationDemoView.xib */,
+				75881840180E0409000D28B6 /* S3NSOperationDemoViewController.h */,
+				75881841180E0409000D28B6 /* S3NSOperationDemoViewController.m */,
+				75881842180E0409000D28B6 /* S3ResponseHandler.h */,
+				75881843180E0409000D28B6 /* S3ResponseHandler.m */,
+			);
+			path = S3;
+			sourceTree = "<group>";
+		};
+		75881844180E0409000D28B6 /* SDB */ = {
+			isa = PBXGroup;
+			children = (
+				75881845180E0409000D28B6 /* DomainList.h */,
+				75881846180E0409000D28B6 /* DomainList.m */,
+				75881847180E0409000D28B6 /* ItemListing.h */,
+				75881848180E0409000D28B6 /* ItemListing.m */,
+				75881849180E0409000D28B6 /* ItemViewController.h */,
+				7588184A180E0409000D28B6 /* ItemViewController.m */,
+				7588184B180E0409000D28B6 /* SdbAsyncViewController.h */,
+				7588184C180E0409000D28B6 /* SdbAsyncViewController.m */,
+				7588184D180E0409000D28B6 /* SdbAsyncViewController.xib */,
+				7588184E180E0409000D28B6 /* SdbRequestDelegate.h */,
+				7588184F180E0409000D28B6 /* SdbRequestDelegate.m */,
+			);
+			path = SDB;
+			sourceTree = "<group>";
+		};
+		75881850180E0409000D28B6 /* SNS */ = {
+			isa = PBXGroup;
+			children = (
+				75881851180E0409000D28B6 /* TopicList.h */,
+				75881852180E0409000D28B6 /* TopicList.m */,
+			);
+			path = SNS;
+			sourceTree = "<group>";
+		};
+		75881853180E0409000D28B6 /* SQS */ = {
+			isa = PBXGroup;
+			children = (
+				75881854180E0409000D28B6 /* AddQueue.h */,
+				75881855180E0409000D28B6 /* AddQueue.m */,
+				75881856180E0409000D28B6 /* AddQueue.xib */,
+				75881857180E0409000D28B6 /* Message.h */,
+				75881858180E0409000D28B6 /* Message.m */,
+				75881859180E0409000D28B6 /* Message.xib */,
+				7588185A180E0409000D28B6 /* MessageList.h */,
+				7588185B180E0409000D28B6 /* MessageList.m */,
+				7588185C180E0409000D28B6 /* QueueList.h */,
+				7588185D180E0409000D28B6 /* QueueList.m */,
+				7588185E180E0409000D28B6 /* SendMessage.h */,
+				7588185F180E0409000D28B6 /* SendMessage.m */,
+				75881860180E0409000D28B6 /* SendMessage.xib */,
+			);
+			path = SQS;
+			sourceTree = "<group>";
+		};
+		75881861180E0409000D28B6 /* TVMClient */ = {
+			isa = PBXGroup;
+			children = (
+				75881862180E0409000D28B6 /* AmazonKeyChainWrapper.h */,
+				75881863180E0409000D28B6 /* AmazonKeyChainWrapper.m */,
+				75881864180E0409000D28B6 /* AmazonTVMClient.h */,
+				75881865180E0409000D28B6 /* AmazonTVMClient.m */,
+				75881866180E0409000D28B6 /* Crypto.h */,
+				75881867180E0409000D28B6 /* Crypto.m */,
+				75881868180E0409000D28B6 /* GetTokenRequest.h */,
+				75881869180E0409000D28B6 /* GetTokenRequest.m */,
+				7588186A180E0409000D28B6 /* GetTokenResponse.h */,
+				7588186B180E0409000D28B6 /* GetTokenResponse.m */,
+				7588186C180E0409000D28B6 /* GetTokenResponseHandler.h */,
+				7588186D180E0409000D28B6 /* GetTokenResponseHandler.m */,
+				7588186E180E0409000D28B6 /* JSONUtilities.h */,
+				7588186F180E0409000D28B6 /* JSONUtilities.m */,
+				75881870180E0409000D28B6 /* LoginRequest.h */,
+				75881871180E0409000D28B6 /* LoginRequest.m */,
+				75881872180E0409000D28B6 /* LoginResponse.h */,
+				75881873180E0409000D28B6 /* LoginResponse.m */,
+				75881874180E0409000D28B6 /* LoginResponseHandler.h */,
+				75881875180E0409000D28B6 /* LoginResponseHandler.m */,
+				75881876180E0409000D28B6 /* Request.h */,
+				75881877180E0409000D28B6 /* Request.m */,
+				75881878180E0409000D28B6 /* RequestDelegate.h */,
+				75881879180E0409000D28B6 /* RequestDelegate.m */,
+				7588187A180E0409000D28B6 /* Response.h */,
+				7588187B180E0409000D28B6 /* Response.m */,
+				7588187C180E0409000D28B6 /* ResponseHandler.h */,
+				7588187D180E0409000D28B6 /* ResponseHandler.m */,
+			);
+			path = TVMClient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,7 +522,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				758817E3180DFFE0000D28B6 /* InfoPlist.strings in Resources */,
+				75881891180E0409000D28B6 /* SdbAsyncViewController.xib in Resources */,
+				75881815180E030F000D28B6 /* project_log in Resources */,
+				75881897180E0409000D28B6 /* Message.xib in Resources */,
+				7588188A180E0409000D28B6 /* S3NSOperationDemoView.xib in Resources */,
+				7588187F180E0409000D28B6 /* AddBucketViewController.xib in Resources */,
+				75881889180E0409000D28B6 /* S3AsyncViewController.xib in Resources */,
+				75881881180E0409000D28B6 /* AddObjectViewController.xib in Resources */,
+				75881895180E0409000D28B6 /* AddQueue.xib in Resources */,
 				758817EE180DFFE0000D28B6 /* Images.xcassets in Resources */,
+				75881887180E0409000D28B6 /* ObjectViewController.xib in Resources */,
+				7588189B180E0409000D28B6 /* SendMessage.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,9 +551,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				758817E9180DFFE0000D28B6 /* AppDelegate.m in Sources */,
+				758818A7180E0409000D28B6 /* RequestDelegate.m in Sources */,
+				75881818180E030F000D28B6 /* AmazonClientManager.m in Sources */,
+				7588188D180E0409000D28B6 /* DomainList.m in Sources */,
+				75881816180E030F000D28B6 /* Constants.m in Sources */,
+				7588187E180E0409000D28B6 /* AddBucketViewController.m in Sources */,
+				75881886180E0409000D28B6 /* ObjectViewController.m in Sources */,
+				75881817180E030F000D28B6 /* data.m in Sources */,
+				75881885180E0409000D28B6 /* ObjectListing.m in Sources */,
+				75881899180E0409000D28B6 /* QueueList.m in Sources */,
+				758818A6180E0409000D28B6 /* Request.m in Sources */,
+				7588189D180E0409000D28B6 /* AmazonTVMClient.m in Sources */,
+				7588188C180E0409000D28B6 /* S3ResponseHandler.m in Sources */,
+				758818A2180E0409000D28B6 /* JSONUtilities.m in Sources */,
+				758818A9180E0409000D28B6 /* ResponseHandler.m in Sources */,
+				7588189C180E0409000D28B6 /* AmazonKeyChainWrapper.m in Sources */,
+				75881814180E030F000D28B6 /* DynamoDBManager.m in Sources */,
+				75881884180E0409000D28B6 /* BucketList.m in Sources */,
+				75881892180E0409000D28B6 /* SdbRequestDelegate.m in Sources */,
+				758818A3180E0409000D28B6 /* LoginRequest.m in Sources */,
+				7588188B180E0409000D28B6 /* S3NSOperationDemoViewController.m in Sources */,
+				75881896180E0409000D28B6 /* Message.m in Sources */,
+				75881883180E0409000D28B6 /* AsyncImageUploader.m in Sources */,
+				7588188E180E0409000D28B6 /* ItemListing.m in Sources */,
+				75881880180E0409000D28B6 /* AddObjectViewController.m in Sources */,
 				758817EC180DFFE0000D28B6 /* cloudit4ios.xcdatamodeld in Sources */,
+				75881898180E0409000D28B6 /* MessageList.m in Sources */,
+				7588189A180E0409000D28B6 /* SendMessage.m in Sources */,
+				7588189F180E0409000D28B6 /* GetTokenRequest.m in Sources */,
+				75881893180E0409000D28B6 /* TopicList.m in Sources */,
 				758817E5180DFFE0000D28B6 /* main.m in Sources */,
+				75881888180E0409000D28B6 /* S3AsyncViewController.m in Sources */,
+				758818A8180E0409000D28B6 /* Response.m in Sources */,
+				758818A1180E0409000D28B6 /* GetTokenResponseHandler.m in Sources */,
+				758818A5180E0409000D28B6 /* LoginResponseHandler.m in Sources */,
+				75881894180E0409000D28B6 /* AddQueue.m in Sources */,
+				75881890180E0409000D28B6 /* SdbAsyncViewController.m in Sources */,
+				7588188F180E0409000D28B6 /* ItemViewController.m in Sources */,
+				7588189E180E0409000D28B6 /* Crypto.m in Sources */,
+				758818A0180E0409000D28B6 /* GetTokenResponse.m in Sources */,
+				758818A4180E0409000D28B6 /* LoginResponse.m in Sources */,
+				7588181B180E0333000D28B6 /* AppDelegate.m in Sources */,
+				75881882180E0409000D28B6 /* AsyncImageDownloader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +711,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/stefanbund/Desktop/cloudit4ios,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cloudit4ios/cloudit4ios-Prefix.pch";
 				INFOPLIST_FILE = "cloudit4ios/cloudit4ios-Info.plist";
@@ -382,6 +728,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/stefanbund/Desktop/cloudit4ios,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cloudit4ios/cloudit4ios-Prefix.pch";
 				INFOPLIST_FILE = "cloudit4ios/cloudit4ios-Info.plist";
